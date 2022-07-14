@@ -1,0 +1,30 @@
+<!doctype html>
+<form action="/create/" method="POST">
+    <label for="name">Name: </label>
+    <input type="text" name="name"><br>
+    <label for="surname">Surname: </label>
+    <input type="text" name="surname"> <br>
+    <label for="email">Email: </label>
+    <input type="email" name="email"> <br>
+    <button>submit</button>
+</form>
+<table>
+    <thead>
+        Names
+    </thead>
+    <thead>
+        Surname
+    </thead>
+    <thead>
+        E-mail
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.surname }}</td>
+            <td>{{ user.email }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

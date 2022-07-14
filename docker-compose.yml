@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  flask_demo:
+    build: .
+    environment:
+      - FLASK_APP=app
+      - FLASK_ENV=development
+    ports:
+      - 8080:8080
