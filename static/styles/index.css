@@ -4,3 +4,8 @@ input {
 .form_table {
     margin:0 auto;
 }
+
+.errors {
+    color: red;
+    text-size-adjust: 4px;
+}
